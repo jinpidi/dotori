@@ -981,6 +981,7 @@ body {
 </div>
 <div id="toast"></div>
 <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 <script>
@@ -1119,7 +1120,7 @@ function init() {
         sessionStorage.setItem('ownerAuth', '1'); /* 새로고침해도 유지 */
         show('view-owner');
       } catch (error) {
-        console.error('인증 실패:', error);
+        console.error('[AUTH ERROR]', error.message);
         history.replaceState(null, '', '?view=guest');
         show('view-guest');
         alert('비밀키가 올바르지 않습니다');
