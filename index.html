@@ -61,13 +61,13 @@ body {
 /* ── 입력 필드 ── */
 .field { margin-bottom: 14px; }
 .field label {
-  display: block; font-size: 14px; font-weight: 500;
-  margin-bottom: 5px; color: var(--br-mid);
+  display: block; font-size: 17px; font-weight: 500;
+  margin-bottom: 6px; color: var(--br-mid);
 }
 .field input {
-  width: 100%; padding: 12px 14px;
+  width: 100%; padding: 14px 14px;
   border: none; border-bottom: 1.5px solid #C8A880; border-radius: 0; background: transparent;
-  font-size: 16px;
+  font-size: 18px;
   outline: none; color: var(--text);
 }
 .field input:focus { border-bottom-color: var(--br-main); outline: none; background: transparent; }
@@ -79,8 +79,8 @@ body {
   overflow: hidden;
 }
 .party-btn {
-  width: 54px; height: 50px;
-  font-size: 24px; font-weight: 300;
+  width: 58px; height: 54px;
+  font-size: 28px; font-weight: 300;
   border: none; background: transparent;
   color: var(--br-main); cursor: pointer;
   flex-shrink: 0; transition: background .1s;
@@ -89,13 +89,13 @@ body {
 .party-btn:disabled { color: #ccc; }
 .party-num {
   flex: 1; text-align: center;
-  font-size: 18px; font-weight: 500; color: var(--text);
+  font-size: 22px; font-weight: 600; color: var(--text);
   border-left: 1.5px solid #E8D8C0; border-right: 1.5px solid #E8D8C0;
 }
 
 /* ── 체크 행 공통 ── */
 .check-row {
-  display: flex; align-items: center; gap: 10px;
+  display: flex; align-items: center; gap: 24px;
   padding: 12px 2px;
   border: none; border-bottom: 1.5px solid #C8A880; border-radius: 0; background: transparent;
   cursor: pointer;
@@ -115,7 +115,7 @@ body {
 .check-row.on    .check-box svg,
 .check-row.checked .check-box svg { display: block; }
 .check-label {
-  flex: 1; font-size: 14px; font-weight: 400; color: var(--text); line-height: 1.4;
+  flex: 1; font-size: 17px; font-weight: 400; color: var(--text); line-height: 1.5;
   pointer-events: none; word-break: keep-all;
 }
 .check-label-req { color: var(--red); }
@@ -126,8 +126,8 @@ body {
 
 /* ── 안내 박스 ── */
 .notice {
-  padding: 11px 14px; border-radius: 10px;
-  font-size: 14px; line-height: 1.65; margin-bottom: 12px;
+  padding: 13px 15px; border-radius: 10px;
+  font-size: 17px; line-height: 1.7; margin-bottom: 12px;
 }
 .notice-warm { background: #FBF0DC; color: #6B4500; border-left: 4px solid var(--br-light); }
 .notice-petzone {
@@ -137,15 +137,15 @@ body {
 }
 
 /* ── 인라인 행 (이름+인원) ── */
-.inline-row { display: flex; gap: 10px; margin-bottom: 14px; align-items: flex-end; }
+.inline-row { display: flex; gap: 24px; margin-bottom: 14px; align-items: flex-end; }
 .inline-row .field { margin-bottom: 0; flex: 1; }
 .inline-row .field.name-field { flex: 1; }
 .inline-row .field input { height: 46px; padding: 0 14px; box-sizing: border-box; }
 .inline-row .party-counter { height: 46px; }
-.inline-row .party-btn { height: 46px; width: 38px; font-size: 22px; }
-.inline-row .party-num { font-size: 15px; white-space: nowrap; }
+.inline-row .party-btn { height: 46px; width: 38px; font-size: 28px; }
+.inline-row .party-num { font-size: 26px; white-space: nowrap; }
 .pet-field { flex: 1; }
-.pet-field label { display: block; font-size: 14px; font-weight: 500; margin-bottom: 5px; color: var(--br-mid); }
+.pet-field label { display: block; font-size: 17px; font-weight: 500; margin-bottom: 5px; color: var(--br-mid); }
 /* ── 반려견 세그먼트 (트랙형) ── */
 .pet-seg {
   display: flex; gap: 3px;
@@ -157,7 +157,7 @@ body {
 .pet-seg-btn {
   flex: 1;
   border: none; border-radius: 8px;
-  padding: 10px 6px;
+  padding: 14px 8px;
   background: transparent;
   font-size: 14px; font-weight: 500;
   color: var(--br-mid); cursor: pointer;
@@ -273,8 +273,8 @@ body {
 }
 .owner-settings-btn:active { background: rgba(255,255,255,.25); }
 /* tab count badge inside button */
-.tab-cnt { font-size: 12px; font-weight: 500; background: var(--br-gold); color: #fff;
-  border-radius: 10px; padding: 1px 6px; margin-left: 4px; }
+.tab-cnt { font-size: 14px; font-weight: 600; background: var(--br-gold); color: #fff;
+  border-radius: 10px; padding: 2px 8px; margin-left: 4px; }
 /* settings modal */
 .settings-overlay {
   display: none; position: fixed; inset: 0; background: rgba(0,0,0,.52);
@@ -300,7 +300,7 @@ body {
   flex: 1; padding: 13px 6px;
   background: rgba(255,255,255,.1); color: rgba(255,255,255,.65);
   border: none; border-radius: 10px 10px 0 0;
-  font-size: 15px; font-weight: 500; cursor: pointer;
+  font-size: 18px; font-weight: 500; cursor: pointer;
 }
 .tab-btn.on { background: var(--cream); color: var(--br-dark); }
 
@@ -653,6 +653,56 @@ body {
 }
 .ws-pet .ws-label { color: var(--br-mid); }
 .ws-pet .ws-num   { color: var(--br-mid); }
+
+/* ── 실행취소 배너 ── */
+#undo-banner {
+  display: none; position: fixed; bottom: 20px; left: 50%;
+  transform: translateX(-50%); z-index: 9999;
+  background: #1a0d02; color: #fff; border-radius: 12px;
+  padding: 11px 16px;
+  width: calc(100% - 32px); max-width: 380px;
+  box-shadow: 0 6px 24px rgba(0,0,0,.4);
+  flex-direction: row; gap: 12px; align-items: center;
+}
+.undo-row { display:flex; align-items:center; gap:10px; flex: 1; }
+.undo-icon { font-size:20px; flex-shrink:0; }
+.undo-msg { flex:1; font-size:14px; font-weight:600; line-height:1.3; }
+.undo-sub { display: none; }
+.undo-actions { display:flex; gap:6px; flex-shrink:0; }
+.undo-do-btn {
+  background: #A87225; color:#fff;
+  border:none; border-radius:10px;
+  padding:9px 14px; font-size:13px; font-weight:700;
+  cursor:pointer; font-family:'Pretendard',sans-serif;
+  letter-spacing:-.2px; white-space:nowrap;
+}
+.undo-dismiss-btn {
+  background: rgba(255,255,255,.15); color:rgba(255,255,255,.7);
+  border:none; border-radius:10px;
+  padding:8px 12px; font-size:12px; font-weight:500;
+  cursor:pointer; font-family:'Pretendard',sans-serif;
+  white-space:nowrap;
+}
+.undo-bar-wrap { display: none; }
+#undo-bar { display: none; }
+
+/* ── 오프라인 배너 ── */
+#offline-banner {
+  display:none; position:fixed; top:0; left:0; right:0; z-index:9998;
+  background:#B83226; color:#fff; text-align:center;
+  padding:14px 20px; font-size:15px; font-weight:600;
+  line-height:1.5;
+}
+
+/* 히스토리 카드 복원 버튼 */
+.restore-btn {
+  background:#FBF6EF; color:var(--br-main);
+  border:1px solid var(--br-light); border-radius:8px;
+  font-weight:600; cursor:pointer;
+  font-family:'Pretendard',sans-serif; letter-spacing:-.2px;
+  transition: filter .15s;
+}
+.restore-btn:active { filter:brightness(.9); }
 </style>
 </head>
 <body>
@@ -704,10 +754,10 @@ body {
     </div>
 
     <!-- 연락처 + 반려견 동반 -->
-    <div class="inline-row" style="margin-bottom:6px;align-items:flex-start;margin-top:10px">
+    <div class="inline-row" style="margin-bottom:6px;align-items:flex-start;margin-top:20px">
       <div class="field" style="flex:1;margin-bottom:0">
         <label>연락처</label>
-        <input id="g-phone" type="tel" placeholder="010-1234-5678" maxlength="13" inputmode="numeric" style="height:46px;padding:0 14px;box-sizing:border-box;width:100%">
+        <input id="g-phone" type="tel" placeholder="010-1234-5678" maxlength="13" inputmode="numeric" style="height:56px;padding:0 14px;box-sizing:border-box;width:100%">
       </div>
       <div class="pet-field">
         <label>반려견 동반</label>
@@ -829,34 +879,34 @@ body {
 <!-- ── 직접 등록 모달 ── -->
 <div id="direct-reg-overlay" style="display:none;position:fixed;inset:0;z-index:300;background:rgba(0,0,0,.52);align-items:flex-end;" onclick="if(event.target===this)closeDirectReg()">
   <div style="width:100%;background:var(--cream);border-radius:24px 24px 0 0;padding:24px 20px 52px;max-height:85vh;overflow-y:auto">
-    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px">
-      <div style="font-size:18px;font-weight:500;color:var(--br-dark)">✏️ 직접 등록</div>
-      <button onclick="closeDirectReg()" style="background:none;border:none;font-size:26px;color:var(--muted);cursor:pointer;padding:0 4px;line-height:1">×</button>
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:24px">
+      <div style="font-size:24px;font-weight:600;color:var(--br-dark)">✏️ 직접 등록</div>
+      <button onclick="closeDirectReg()" style="background:none;border:none;font-size:32px;color:var(--muted);cursor:pointer;padding:0 4px;line-height:1">×</button>
     </div>
-    <div style="font-size:13px;color:var(--muted);margin-bottom:16px;line-height:1.6;padding:10px 14px;background:#FBF6EF;border-radius:10px;border-left:3px solid var(--br-light)">QR을 사용하기 어려운 손님을 직접 등록합니다.</div>
-    <div style="display:flex;gap:10px;margin-bottom:14px;align-items:flex-end">
+    <div style="font-size:16px;color:var(--muted);margin-bottom:20px;line-height:1.8;padding:14px 16px;background:#FBF6EF;border-radius:10px;border-left:4px solid var(--br-light)">QR을 사용하기 어려운 손님을 직접 등록합니다.</div>
+    <div style="display:flex;gap:12px;margin-bottom:18px;align-items:flex-end">
       <div class="field name-field" style="flex:1.2;margin-bottom:0">
-        <label>성함</label>
-        <input id="dr-name" type="text" placeholder="김송추" maxlength="20" style="height:46px;padding:0 14px;box-sizing:border-box;width:100%">
+        <label style="font-size:20px;font-weight:600;margin-bottom:8px;color:var(--br-mid);display:block">성함</label>
+        <input id="dr-name" type="text" placeholder="김송추" maxlength="20" style="height:52px;padding:0 16px;box-sizing:border-box;width:100%;font-size:20px">
       </div>
       <div style="flex:1;margin-bottom:0">
-        <label style="display:block;font-size:13px;font-weight:400;margin-bottom:5px;color:var(--muted)">인원</label>
-        <div class="party-counter" style="height:46px">
-          <button class="party-btn" id="dr-minus" onclick="drParty(-1)" style="height:46px;width:38px;font-size:22px">−</button>
-          <div class="party-num" id="dr-party-num" style="font-size:15px">2명</div>
-          <button class="party-btn" id="dr-plus"  onclick="drParty(1)"  style="height:46px;width:38px;font-size:22px">+</button>
+        <label style="display:block;font-size:20px;font-weight:600;margin-bottom:8px;color:var(--br-mid)">인원</label>
+        <div class="party-counter" style="height:52px">
+          <button class="party-btn" id="dr-minus" onclick="drParty(-1)" style="height:52px;width:44px;font-size:28px">−</button>
+          <div class="party-num" id="dr-party-num" style="font-size:22px;font-weight:700">2명</div>
+          <button class="party-btn" id="dr-plus"  onclick="drParty(1)"  style="height:52px;width:44px;font-size:28px">+</button>
         </div>
       </div>
     </div>
     <div class="field">
-      <label>연락처</label>
-      <input id="dr-phone" type="tel" placeholder="010-1234-5678" maxlength="13" inputmode="numeric" style="font-size:16px">
+      <label style="font-size:20px;font-weight:600;margin-bottom:8px;color:var(--br-mid);display:block">연락처</label>
+      <input id="dr-phone" type="tel" placeholder="010-1234-5678" maxlength="13" inputmode="numeric" style="font-size:20px;height:52px;padding:0 14px">
     </div>
-    <div class="check-row" id="dr-pet-row" onclick="toggleDrPet()" style="margin-top:6px;margin-bottom:16px">
-      <div class="check-box" id="dr-pet-box"><svg width="12" height="10" viewBox="0 0 12 10" fill="none"><polyline points="1 5 5 9 11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-      <div class="check-label">🐶 반려견 동반</div>
+    <div class="check-row" id="dr-pet-row" onclick="toggleDrPet()" style="margin-top:12px;margin-bottom:24px;padding:14px;background:rgba(255,255,255,.5);border-radius:10px;cursor:pointer">
+      <div class="check-box" id="dr-pet-box" style="width:28px;height:28px"><svg width="16" height="14" viewBox="0 0 12 10" fill="none"><polyline points="1 5 5 9 11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <div class="check-label" style="font-size:18px;font-weight:500">🐶 반려견 동반 <span style="font-size:16px;color:var(--muted)">(반려견 동반이면 체크)</span></div>
     </div>
-    <button class="btn btn-brown" onclick="submitDirectReg()">등록하기</button>
+    <button class="btn btn-brown" onclick="submitDirectReg()" style="font-size:18px;padding:20px 16px;font-weight:700">등록하기</button>
   </div>
 </div>
 
@@ -887,8 +937,8 @@ body {
         <select id="s-timeout">
           <option value="1">1분 (데모용)</option>
           <option value="5">5분</option>
-          <option value="10">10분</option>
-          <option value="15" selected>15분 (기본)</option>
+          <option value="10" selected>10분 (기본)</option>
+          <option value="15">15분</option>
           <option value="20">20분</option>
         </select>
       </div>
@@ -899,17 +949,36 @@ body {
       <p style="color:#bbb;font-size:14px;margin-bottom:14px">대기번호를 1번부터 다시 시작할 때 사용</p>
       <button class="btn btn-gray" onclick="resetAll()">초기화</button>
     </div>
-    <div class="scard" id="analytics-scard">
-      <h3>📊 대기 시간 데이터</h3>
-      <p style="color:var(--muted);font-size:13px;margin-bottom:14px;line-height:1.6">입장 안내 시점까지 걸린 시간을 자동 기록합니다.<br>향후 예상 대기 시간 안내에 활용됩니다.</p>
-      <div id="analytics-table-wrap">
+    <div class="scard">
+      <h3>📊 순서별 평균 대기시간</h3>
+      <p style="color:var(--muted);font-size:13px;margin-bottom:14px">입장 고객들의 대기시간을 순서별, 카테고리별로 통계합니다.</p>
+      <div id="stats-container">
         <div style="color:#bbb;font-size:13px;text-align:center;padding:16px 0">데이터를 불러오는 중...</div>
       </div>
-      <button class="btn btn-outline" style="margin-top:12px;font-size:13px" onclick="clearAnalytics()">데이터 초기화</button>
     </div>
   </div>
 </div>
 
+<!-- ── 실행취소 배너 ── -->
+<div id="undo-banner">
+  <div class="undo-row">
+    <span class="undo-icon">↺</span>
+    <div>
+      <div class="undo-msg" id="undo-msg">방금 입장 처리했습니다</div>
+      <div class="undo-sub">실수라면 지금 되돌리세요</div>
+    </div>
+  </div>
+  <div class="undo-actions">
+    <button class="undo-do-btn" onclick="undoLastAction()">방금 거 되돌리기</button>
+    <button class="undo-dismiss-btn" onclick="hideUndo()">닫기</button>
+  </div>
+  <div class="undo-bar-wrap"><div id="undo-bar" style="width:100%"></div></div>
+</div>
+<!-- ── 오프라인 배너 ── -->
+<div id="offline-banner">
+  📵 인터넷 연결이 끊겼습니다 — 앱이 작동하지 않을 수 있어요.<br>
+  Wi-Fi 또는 데이터를 확인해 주세요
+</div>
 <div id="toast"></div>
 <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
@@ -931,7 +1000,7 @@ const db = firebase.database();
 /* ── 상태 ── */
 const KEY = 'wt4_';
 let storeName  = '송추도토리';
-let timeoutMin = 15;
+let timeoutMin = 10;
 let records    = [];
 let counter    = 0;
 let partyVal   = 2;
@@ -999,30 +1068,65 @@ function init() {
       initStatus(rid);
     }
   } else {
-    /* 사장님 화면: 비밀 키 검증 */
-    const OWNER_KEY = 'dotori202605210329am';
-    const keyOk = params.get('k') === OWNER_KEY || sessionStorage.getItem('ownerAuth') === OWNER_KEY;
-    if (!keyOk) {
-      /* 키 없으면 손님 등록 화면으로 */
-      history.replaceState(null, '', '?view=guest');
-      show('view-guest');
-      document.getElementById('g-phone').addEventListener('input', function() {
-        const d = this.value.replace(/\D/g,'').slice(0,11);
-        if (d.length <= 3) this.value = d;
-        else if (d.length <= 7) this.value = d.slice(0,3) + '-' + d.slice(3);
-        else this.value = d.slice(0,3) + '-' + d.slice(3,7) + '-' + d.slice(7);
-      });
-      db.ref('records').on('value', snap => {
-        const all = snapToRecs(snap).filter(r => r.status === 'waiting' || r.status === 'notified');
-        const normalEl = document.getElementById('wc-normal');
-        const petEl    = document.getElementById('wc-pet');
-        if (normalEl) normalEl.textContent = all.filter(r => !r.pet).length;
-        if (petEl)    petEl.textContent    = all.filter(r => r.pet).length;
-      });
-      return;
+    /* 사장님 화면: 백엔드에서 비밀키 검증 후 Firebase 토큰 받기 */
+    const keyOk = sessionStorage.getItem('ownerAuth')==='1';
+    const key = params.get('k');
+
+    async function authenticateWithBackend() {
+      if (keyOk) {
+        // 이미 인증됨
+        show('view-owner');
+        return;
+      }
+
+      if (!key) {
+        // 키 없으면 손님 등록 화면으로
+        history.replaceState(null, '', '?view=guest');
+        show('view-guest');
+        document.getElementById('g-phone').addEventListener('input', function() {
+          const d = this.value.replace(/\D/g,'').slice(0,11);
+          if (d.length <= 3) this.value = d;
+          else if (d.length <= 7) this.value = d.slice(0,3) + '-' + d.slice(3);
+          else this.value = d.slice(0,3) + '-' + d.slice(3,7) + '-' + d.slice(7);
+        });
+        db.ref('records').on('value', snap => {
+          const all = snapToRecs(snap).filter(r => r.status === 'waiting' || r.status === 'notified');
+          const normalEl = document.getElementById('wc-normal');
+          const petEl    = document.getElementById('wc-pet');
+          if (normalEl) normalEl.textContent = all.filter(r => !r.pet).length;
+          if (petEl)    petEl.textContent    = all.filter(r => r.pet).length;
+        });
+        return;
+      }
+
+      try {
+        // 백엔드에 비밀키 전송
+        const response = await fetch('/api/auth/token', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ key })
+        });
+
+        if (!response.ok) {
+          throw new Error('비밀키가 올바르지 않습니다');
+        }
+
+        const data = await response.json();
+
+        // Firebase 토큰으로 인증
+        await firebase.auth().signInWithCustomToken(data.token);
+
+        sessionStorage.setItem('ownerAuth', '1'); /* 새로고침해도 유지 */
+        show('view-owner');
+      } catch (error) {
+        console.error('인증 실패:', error);
+        history.replaceState(null, '', '?view=guest');
+        show('view-guest');
+        alert('비밀키가 올바르지 않습니다');
+      }
     }
-    sessionStorage.setItem('ownerAuth', OWNER_KEY); /* 새로고침해도 유지 */
-    show('view-owner');
+
+    authenticateWithBackend();
     /* 직접 등록 전화번호 자동 하이픈 */
     const drPhoneEl = document.getElementById('dr-phone');
     if (drPhoneEl) drPhoneEl.addEventListener('input', function() {
@@ -1038,7 +1142,7 @@ function init() {
       records    = data.records  ? Object.values(data.records) : [];
       counter    = data.counter  || 0;
       storeName  = (data.settings && data.settings.name)    || '송추도토리';
-      timeoutMin = (data.settings && data.settings.timeout) || 15;
+      timeoutMin = (data.settings && data.settings.timeout) || 10;
       if (!ownerReady) {
         ownerReady = true;
         checkDailyReset();
@@ -1133,8 +1237,17 @@ function guestSubmit() {
       btn.disabled = false; return;
     }
     const newCounter = snap.val();
+
+    /* 등록 시점의 앞팀 개수 (대기순서) 계산 */
+    const queuePosAtCreation = records.filter(x =>
+      x.pet === petChoice && x.num < newCounter &&
+      (x.status === 'waiting' || x.status === 'notified' ||
+       x.status === 'entered' || x.status === 'no_show' || x.status === 'cancelled')
+    ).length + 1;
+
     const rec = { id: Date.now(), num: newCounter, name, party: partyVal,
-                  phone, pet: petChoice, status: 'waiting', createdAt: Date.now() };
+                  phone, pet: petChoice, status: 'waiting', createdAt: Date.now(),
+                  queuePosAtCreation: queuePosAtCreation };
 
     /* Firebase에 먼저 저장 후 position 계산 */
     db.ref('records/' + rec.id).set(rec, writeErr => {
@@ -1250,14 +1363,9 @@ function renderHistory() {
     el.innerHTML = '<div class="empty"><div class="eicon">📋</div><p>지난 기록이 없습니다</p></div>';
     return;
   }
-  const icons = {
-    entered:   '<svg width=\"13\" height=\"13\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg>',
-    no_show:   '<svg width=\"13\" height=\"13\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><line x1=\"18\" y1=\"6\" x2=\"6\" y2=\"18\"/><line x1=\"6\" y1=\"6\" x2=\"18\" y2=\"18\"/></svg>',
-    cancelled: '<svg width=\"13\" height=\"13\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"><line x1=\"5\" y1=\"12\" x2=\"19\" y2=\"12\"/></svg>'
-  };
-  const getHistLabel = r => {
-    if (r.status === 'cancelled') return r.cancelledBy === 'customer' ? '고객 취소' : '취소';
-    return { entered:'입장', no_show:'미입장' }[r.status] || '';
+  const fmtTimeHM = ts => {
+    const d = new Date(ts);
+    return String(d.getHours()).padStart(2,'0') + ':' + String(d.getMinutes()).padStart(2,'0');
   };
   const dayLabel = ts => {
     const d = new Date(ts), t = todayStr();
@@ -1268,17 +1376,47 @@ function renderHistory() {
     if (ds === ys) return '어제';
     return (d.getMonth()+1) + '/' + d.getDate() + ' (' + ['일','월','화','수','목','금','토'][d.getDay()] + ')';
   };
+  const getStatusColor = r => {
+    if (r.status === 'entered') return '#29805A';
+    if (r.status === 'no_show') return '#B83226';
+    if (r.status === 'cancelled') return '#A87225';
+    return '#7A5C4A';
+  };
+  const getStatusText = r => {
+    if (r.status === 'cancelled') return r.cancelledBy === 'customer' ? '고객 취소' : '취소';
+    return { entered:'입장', no_show:'미입장' }[r.status] || '';
+  };
   const cardHTML = r => {
     const waitMin = (r.status === 'entered' && r.enteredAt && r.createdAt)
       ? Math.round((r.enteredAt - r.createdAt) / 60000) : null;
-    const labelInner = waitMin !== null
-      ? (icons[r.status]||'') + getHistLabel(r) + '<span style="font-size:11px;font-weight:400;opacity:.75">' + waitMin + '분</span>'
-      : (icons[r.status]||'') + getHistLabel(r);
-    return '<div class="hcard ' + r.status + '">' +
-      '<div><div class="hnum">대기번호 ' + r.num + '번 &nbsp;<span style="font-size:16px;font-weight:500">' + esc(r.name) + ' · ' + r.party + '명' + (r.pet?' · 🐶':'') + '</span></div>' +
-      '<div class="htime">' + fmtPhone(r.phone) + '</div>' +
-      '<div class="htime" style="margin-top:2px">등록 ' + fmtTime(r.createdAt) + (r.enteredAt ? '&nbsp;→&nbsp;입장 ' + fmtTime(r.enteredAt) : (r.cancelledAt ? '&nbsp;→&nbsp;취소 ' + fmtTime(r.cancelledAt) : '')) + '</div></div>' +
-      '<div class="hlabel ' + r.status + '">' + labelInner + '</div></div>';
+    // 등록 시점의 순서 (queuePosAtCreation) 사용, 없으면 현재 기준으로 계산
+    const queuePos = r.queuePosAtCreation || records.filter(x =>
+      x.pet === r.pet && x.num < r.num &&
+      (x.status === 'waiting' || x.status === 'notified' ||
+       x.status === 'entered' || x.status === 'no_show')
+    ).length + 1;
+    const statusColor = getStatusColor(r);
+    const statusText = getStatusText(r);
+    const guestName = (r.pet ? '🐶 ' : '') + esc(r.name);
+    const timeDisplay = r.status === 'entered'
+      ? '등록 ' + fmtTimeHM(r.createdAt) + ' → 입장 ' + fmtTimeHM(r.enteredAt) + ' (' + waitMin + '분 소요)'
+      : '등록 ' + fmtTimeHM(r.createdAt);
+
+    return '<div style="background:#fff;border-radius:12px;padding:14px;margin-bottom:10px;border-left:4px solid ' + statusColor + '">' +
+      '<div style="display:grid;grid-template-columns:auto 1fr auto auto;gap:12px;align-items:start">' +
+        '<div style="font-weight:700;font-size:15px;color:var(--br-main);text-align:center;min-width:45px">' + r.num + '번</div>' +
+        '<div style="min-width:0">' +
+          '<div style="font-weight:600;font-size:14px;color:var(--br-dark);margin-bottom:4px">' + guestName + ' · ' + r.party + '명</div>' +
+          '<div style="font-size:12px;color:var(--muted);margin-bottom:2px">순서 ' + queuePos + '번 · ' + fmtPhone(r.phone) + '</div>' +
+          '<div style="font-size:12px;color:var(--muted)">' + timeDisplay + '</div>' +
+        '</div>' +
+        '<div style="text-align:right;flex-shrink:0">' +
+          '<div style="background:' + statusColor + ';color:#fff;padding:6px 10px;border-radius:6px;font-size:12px;font-weight:600;margin-bottom:6px">' + statusText + '</div>' +
+          (['cancelled','no_show','entered'].includes(r.status)
+            ? '<button onclick="restoreRec(' + r.id + ')" style="background:none;border:1px solid var(--br-light);color:var(--br-main);padding:5px 8px;border-radius:6px;font-size:11px;font-weight:600;cursor:pointer;transition:all .15s">↺ 복원</button>'
+            : '<div style="height:28px"></div>') +
+        '</div>' +
+      '</div></div>';
   };
   // 날짜별 그룹핑
   const groups = [];
@@ -1288,20 +1426,24 @@ function renderHistory() {
     if (!seen[key]) { seen[key] = true; groups.push({ label: key, items: [] }); }
     groups[groups.length-1].items.push(r);
   });
-  el.innerHTML = groups.map(g =>
-    '<div class="hist-day-head">' + g.label + '</div>' +
-    g.items.map(cardHTML).join('')
-  ).join('');
+  el.innerHTML = '<div style="padding:16px">' +
+    groups.map(g =>
+      '<div style="font-size:14px;font-weight:700;color:var(--br-dark);margin:20px 0 12px 0">' + g.label + '</div>' +
+      g.items.map(cardHTML).join('')
+    ).join('') +
+    '</div>';
 }
 
 function notifyGuest(id) {
   const r = findRec(id); if (!r) return;
+  _saveUndo('notify', r, r.status);
   r.status = 'notified'; r.notifiedAt = Date.now();
   saveRec(r);
   kakaoSend(r, 'notify');
   startTimer(r);
   recordWaitAnalytics(r);
   toast(r.name + '님께 입장 안내를 발송했습니다');
+  showUndo(r.name + '님께 입장 안내 발송 — 실수했다면 되돌리세요');
 }
 
 function callAndNotify(id) {
@@ -1352,6 +1494,94 @@ const confirmDlg = {
   cancel() { document.getElementById('confirm-overlay').style.display = 'none'; this._resolve && this._resolve(false); this._resolve = null; }
 };
 
+
+/* ═══════════════════════════════════════════
+   실행 취소 (Undo)
+   ═══════════════════════════════════════════ */
+let lastAction     = null;
+let _undoTimer     = null;
+let _undoBarTimer  = null;
+const UNDO_SEC     = 12;
+
+function _saveUndo(type, snapshot, prevStatus) {
+  lastAction = { type, rec: JSON.parse(JSON.stringify(snapshot)), prevStatus };
+}
+
+function showUndo(msg) {
+  clearTimeout(_undoTimer);
+  clearInterval(_undoBarTimer);
+  document.getElementById('undo-msg').textContent  = msg;
+  const banner = document.getElementById('undo-banner');
+  const bar    = document.getElementById('undo-bar');
+  banner.style.display = 'flex';
+  bar.style.transition  = 'none';
+  bar.style.width       = '100%';
+  // 다음 프레임에 트랜지션 적용 (애니메이션 초기화)
+  requestAnimationFrame(() => {
+    bar.style.transition = 'width ' + UNDO_SEC + 's linear';
+    bar.style.width      = '0%';
+  });
+  _undoTimer = setTimeout(hideUndo, UNDO_SEC * 1000);
+}
+
+function hideUndo() {
+  clearTimeout(_undoTimer);
+  document.getElementById('undo-banner').style.display = 'none';
+  lastAction = null;
+}
+
+function undoLastAction() {
+  if (!lastAction) return;
+  const { rec, prevStatus } = lastAction;
+  let r = findRec(rec.id);
+  if (!r) { records.push(JSON.parse(JSON.stringify(rec))); r = records[records.length - 1]; }   // 삭제된 경우 복원
+
+  // snapshot의 모든 필드 복원 (queuePosAtCreation 등도 포함)
+  Object.assign(r, JSON.parse(JSON.stringify(rec)));
+  r.status = prevStatus;
+
+  // null 필드 정리
+  Object.keys(r).forEach(k => { if (r[k] === null || r[k] === undefined) delete r[k]; });
+
+  // 타이머도 복원 (입장 안내 상태였다면)
+  if (prevStatus === 'notified') startTimer(r);
+
+  saveRec(r);
+  hideUndo();
+  renderWaiting();
+  renderHistory();
+  toast('✅ 되돌렸습니다 — ' + r.name + '님');
+}
+
+/* ═══════════════════════════════════════════
+   기록 복원
+   ═══════════════════════════════════════════ */
+async function restoreRec(id) {
+  const r = findRec(id);
+  if (!r) return;
+  const ok = await confirmDlg.show(
+    r.name + '님을 대기 목록에 복원할까요?',
+    r.num + '번 · ' + r.party + '명' + (r.pet ? ' · 🐶 반려견' : '') + '\n대기 맨 뒤 순번으로 다시 추가됩니다.',
+    '대기 복원', 'btn-brown'
+  );
+  if (!ok) return;
+  r.status = 'waiting';
+  delete r.enteredAt; delete r.cancelledAt; delete r.cancelledBy;
+  // notifiedAt도 초기화
+  delete r.notifiedAt; delete r.preNotified;
+  saveRec(r);
+  renderWaiting();
+  renderHistory();
+  toast('↩️ ' + r.name + '님을 대기 목록에 복원했습니다');
+}
+
+/* ═══════════════════════════════════════════
+   오프라인 감지
+   ═══════════════════════════════════════════ */
+window.addEventListener('online',  () => { document.getElementById('offline-banner').style.display = 'none'; });
+window.addEventListener('offline', () => { document.getElementById('offline-banner').style.display = 'block'; });
+if (!navigator.onLine) document.getElementById('offline-banner').style.display = 'block';
+
 /* ── 새 손님 알림음 ── */
 function playNewGuestSound() {
   try {
@@ -1376,6 +1606,7 @@ async function confirmEntry(id) {
     '입장 처리', 'btn-green'
   );
   if (!ok) return;
+  _saveUndo('entry', r, r.status);
   clearTimer(id); r.status = 'entered'; r.enteredAt = Date.now();
   const next = records
     .filter(x => x.pet === r.pet && x.status === 'waiting' && x.num > r.num)
@@ -1387,6 +1618,7 @@ async function confirmEntry(id) {
   }
   saveRec(r);
   toast(r.name + '님 입장 완료!');
+  showUndo(r.name + '님 입장 처리 완료 — 실수했다면 되돌리세요');
 }
 
 async function cancelRec(id) {
@@ -1397,10 +1629,12 @@ async function cancelRec(id) {
     '취소 처리', 'btn-red'
   );
   if (!ok) return;
+  _saveUndo('cancel', r, r.status);
   clearTimer(id); r.status = 'cancelled'; r.cancelledAt = Date.now();
   saveRec(r);
   kakaoSend(r, 'cancel');
   toast(r.name + '님 대기 취소');
+  showUndo(r.name + '님 취소 처리 완료 — 실수했다면 되돌리세요');
 }
 
 /* ── 고객 직접 취소 ── */
@@ -1461,21 +1695,40 @@ function submitDirectReg() {
   if (rawPhone.length < 10) { toast('연락처를 입력해주세요'); return; }
   const phone = rawPhone;
 
-  counter++;
-  const id  = Date.now();
-  const rec = { id, num: counter, name, party: drPartyVal, phone, pet: drPetVal, status: 'waiting', createdAt: Date.now(), directReg: true };
-  records.push(rec);
-  db.ref('records/' + id).set(rec);
-  db.ref('counter').set(counter);
+  /* counter 안전 증가 (transaction) */
+  db.ref('counter').transaction(cur => (cur || 0) + 1, (err, committed, snap) => {
+    if (err || !committed) {
+      toast('오류가 발생했습니다. 다시 시도해주세요');
+      return;
+    }
+    const newCounter = snap.val();
+    const id = Date.now();
 
-  /* 직접 등록 대기 중 15분 타이머 시작 */
-  autoTimers[id] = setTimeout(() => autoCancel(id), timeoutMin * 60 * 1000);
+    /* 등록 시점의 앞팀 개수 (대기순서) 계산 */
+    const queuePosAtCreation = records.filter(x =>
+      x.pet === drPetVal && x.num < newCounter &&
+      (x.status === 'waiting' || x.status === 'notified' ||
+       x.status === 'entered' || x.status === 'no_show' || x.status === 'cancelled')
+    ).length + 1;
 
-  kakaoSend(rec, 'register');
+    const rec = { id, num: newCounter, name, party: drPartyVal, phone, pet: drPetVal,
+                  status: 'waiting', createdAt: Date.now(), directReg: true,
+                  queuePosAtCreation: queuePosAtCreation };
 
-  closeDirectReg();
-  toast(name + '님 등록 완료 (' + counter + '번)');
-  renderWaiting();
+    records.push(rec);
+    db.ref('records/' + id).set(rec, writeErr => {
+      if (writeErr) { toast('오류가 발생했습니다'); return; }
+
+      /* 직접 등록 대기 중 15분 타이머 시작 */
+      autoTimers[id] = setTimeout(() => autoCancel(id), timeoutMin * 60 * 1000);
+
+      kakaoSend(rec, 'register');
+
+      closeDirectReg();
+      toast(name + '님 등록 완료 (' + newCounter + '번)');
+      renderWaiting();
+    });
+  });
 }
 
 function startTimer(r) {
@@ -1557,7 +1810,7 @@ async function kakaoSend(r, type) {
   const templates = {
     register:  { id: 'KA01TP260518153905354oZa0MtHhF7X', vars: { '#{이름}': r.name, '#{순번}': String(r.num), '#{아이디}': String(r.id) } },
     prenotify: { id: 'KA01TP260517170650623r6cOpT0ak6O', vars: { '#{이름}': r.name, '#{아이디}': String(r.id) } },
-    notify:    { id: 'KA01TP260517170750369GIlXd79j1xG', vars: { '#{이름}': r.name, '#{시간}': '10', '#{아이디}': String(r.id) } },
+    notify:    { id: 'KA01TP260520124101087K9GLeSHjBx1', vars: { '#{이름}': r.name, '#{시간}': String(timeoutMin) } },
     cancel:    { id: 'KA01TP260517171310003FmmQdNHawlJ', vars: { '#{이름}': r.name, '#{아이디}': String(r.id) } },
   };
 
@@ -1615,7 +1868,7 @@ function initStatus(rid) {
   });
   db.ref('settings').once('value', snap => {
     const s = snap.val() || {};
-    timeoutMin = s.timeout || 15;
+    timeoutMin = s.timeout || 10;
     storeName  = s.name    || '송추도토리';
   });
   setInterval(updateStatusTime, 1000);
@@ -1649,7 +1902,12 @@ function renderStatus(rid) {
     return;
   }
 
-  const position = records.filter(x => x.pet === r.pet && (x.status==='waiting'||x.status==='notified') && x.num < r.num).length + 1;
+  // position: 같은 카테고리에서 현재 고객보다 등록번호가 낮은 waiting/notified 고객 수 + 1
+  const position = records.filter(x =>
+    x.pet === r.pet &&
+    (x.status==='waiting'||x.status==='notified') &&
+    x.num < r.num
+  ).length + 1;
 
   const cancelWrap  = document.getElementById('status-cancel-wrap');
   const cancelBtn   = document.getElementById('status-cancel-btn');
@@ -1668,10 +1926,11 @@ function renderStatus(rid) {
   if (r.status === 'waiting') {
     const ahead  = position - 1;
     const isNext = position === 1;
+    const congestionMsg = '<div style="font-size:12px;font-weight:400;color:var(--muted);margin-top:8px;line-height:1.5">매장 출입구는 혼잡할 수 있으니,<br>건물 옆 쉼터나 매장 밖 편한 곳에서<br>대기해주시면 감사하겠습니다.</div>';
     const subMsg = ahead > 0
-      ? '<div style="font-size:14px;color:var(--muted);margin-top:10px">앞에 <strong style="color:var(--br-gold)">' + ahead + '팀</strong> 대기 중</div>'
+      ? '<div style="font-size:14px;color:var(--muted);margin-top:10px">앞에 <strong style="color:var(--br-gold)">' + ahead + '팀</strong> 대기 중</div>' + congestionMsg
       : isNext
-        ? '<div style="font-size:14px;font-weight:600;color:var(--br-gold);margin-top:10px">입장 시 성함을 꼭! 말씀해 주세요</div>'
+        ? '<div style="font-size:14px;font-weight:600;color:var(--br-gold);margin-top:10px;line-height:1.6">입장 시 성함을 꼭! 말씀해 주세요' + congestionMsg + '</div>'
         : '<div style="font-size:14px;font-weight:600;color:var(--br-gold);margin-top:10px">매장 앞에서 대기해 주세요</div>';
     card.innerHTML =
       nameRow +
@@ -1681,6 +1940,7 @@ function renderStatus(rid) {
           '<span style="font-size:36px;font-weight:800;color:var(--br-dark);letter-spacing:-1px">' + position + '</span>' +
           '<span style="font-size:36px;font-weight:800;color:var(--br-dark);letter-spacing:-1px">번</span>' +
         '</div>' +
+        '<div style="font-size:13px;color:var(--muted);margin-top:8px">(' + (r.pet ? '반려견 동반' : '일반') + ' 손님 중)</div>' +
         subMsg +
       '</div>';
     if (cancelWrap) { cancelWrap.style.display = 'block'; cancelBtn.onclick = () => customerCancelRec(rid); }
@@ -1697,25 +1957,91 @@ function renderStatus(rid) {
   } else if (r.status === 'entered') {
     card.innerHTML =
       nameRow +
-      '<div style="text-align:center;padding:8px 0 14px">' +
-        '<div style="font-size:52px;color:#1F7A4B;line-height:1">✓</div>' +
-        '<div style="font-size:18px;font-weight:700;color:#1F7A4B;margin-top:8px">입장 완료</div>' +
-        '<div style="font-size:14px;color:var(--muted);margin-top:6px">즐거운 식사 되세요 🍽</div>' +
+      '<div style="text-align:center;padding:6px 0 14px">' +
+        '<div style="font-size:36px;font-weight:800;color:#1F7A4B;letter-spacing:-1px">입장 완료</div>' +
+        '<div style="font-size:14px;color:var(--muted);margin-top:10px">즐거운 식사 되세요</div>' +
       '</div>';
     document.getElementById('status-refresh').style.display = 'none';
     if (cancelWrap) cancelWrap.style.display = 'none';
-    
+
   } else {
     const cancelMsg = r.cancelledBy === 'customer' ? '직접 취소하셨습니다.' : '대기가 취소되었습니다.';
     card.innerHTML =
-      '<div style="text-align:center;padding:8px 0 14px">' +
-        '<div style="font-size:17px;font-weight:600;color:var(--br-dark);margin-bottom:8px">' + cancelMsg + '</div>' +
-        '<div style="font-size:13px;color:var(--muted);line-height:1.7">다시 등록하시려면<br>매장 입구 QR코드를 이용해 주세요</div>' +
+      nameRow +
+      '<div style="text-align:center;padding:6px 0 14px">' +
+        '<div style="font-size:36px;font-weight:800;color:var(--br-dark);letter-spacing:-1px">대기 취소</div>' +
+        '<div style="font-size:14px;color:var(--muted);margin-top:10px">' + cancelMsg + '</div>' +
+        '<div style="font-size:13px;color:var(--muted);margin-top:6px;line-height:1.7">다시 등록하시려면 매장 입구 QR코드를 이용해 주세요</div>' +
       '</div>';
     document.getElementById('status-refresh').style.display = 'none';
     if (cancelWrap) cancelWrap.style.display = 'none';
     
   }
+}
+
+function renderStats() {
+  if (!records || records.length === 0) return;
+
+  // 입장한 기록만 필터링해서 통계 계산
+  const entered = records.filter(r => r.status === 'entered' && r.enteredAt && r.createdAt && r.queuePosAtCreation);
+
+  // 순서별, 카테고리별 통계 계산
+  const statsData = { '일반': {}, '반려견': {} };
+
+  entered.forEach(r => {
+    const queuePos = r.queuePosAtCreation;
+    const category = r.pet ? '반려견' : '일반';
+    const waitMin = Math.round((r.enteredAt - r.createdAt) / 60000);
+
+    if (!statsData[category][queuePos]) {
+      statsData[category][queuePos] = { total: 0, count: 0 };
+    }
+    statsData[category][queuePos].total += waitMin;
+    statsData[category][queuePos].count += 1;
+  });
+
+  // 전체 위치 합집합 구하기
+  const allPositions = new Set();
+  ['일반', '반려견'].forEach(cat => {
+    Object.keys(statsData[cat]).forEach(pos => allPositions.add(parseInt(pos)));
+  });
+  const positions = Array.from(allPositions).sort((a,b) => a - b);
+
+  // 두 열 레이아웃으로 렌더링 (더 컴팩트하게)
+  const container = document.getElementById('stats-container');
+  if (!container) return;
+
+  let html = '<div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;padding:16px;font-size:14px">';
+
+  ['일반', '반려견'].forEach(category => {
+    const stats = statsData[category];
+    const catLabel = category === '일반' ? '일반 고객' : '🐶 애견';
+    let catHtml = '<div><div style="font-weight:600;color:var(--br-dark);margin-bottom:8px;font-size:13px">' + catLabel + '</div>';
+
+    if (positions.length === 0) {
+      catHtml += '<div style="color:#bbb;font-size:11px;padding:8px;text-align:center">데이터 없음</div>';
+    } else {
+      catHtml += '<div style="display:grid;gap:4px">';
+      positions.forEach(pos => {
+        const data = stats[pos];
+        if (!data) {
+          catHtml += '<div style="padding:6px 8px;font-size:11px;color:#ddd">순서 ' + pos + ' —</div>';
+        } else {
+          const avg = Math.round(data.total / data.count);
+          catHtml += '<div style="background:#f9f9f9;border-left:3px solid var(--br-main);padding:6px 8px;border-radius:4px;display:flex;justify-content:space-between;font-size:12px">' +
+            '<span>순서 <strong>' + pos + '</strong></span>' +
+            '<strong style="color:var(--br-main)">' + avg + '분</strong>' +
+            '</div>';
+        }
+      });
+      catHtml += '</div>';
+    }
+    catHtml += '</div>';
+    html += catHtml;
+  });
+
+  html += '</div>';
+  container.innerHTML = html;
 }
 
 function ownerRefresh() {
@@ -1740,7 +2066,7 @@ function openSettings() {
   document.getElementById('s-name').value    = storeName;
   document.getElementById('s-timeout').value = timeoutMin;
   generateQR();
-  loadAnalytics();
+  renderStats();
   document.getElementById('settings-overlay').classList.add('open');
 }
 
@@ -1796,8 +2122,19 @@ function saveTimeout() {
   db.ref('settings/timeout').set(timeoutMin);
   toast(timeoutMin + '분으로 설정되었습니다');
 }
-function resetAll() {
-  if (!confirm('모든 대기 기록과 번호를 초기화할까요?')) return;
+async function resetAll() {
+  const ok1 = await confirmDlg.show(
+    '⚠️ 전체 초기화',
+    '지금 대기 중인 손님 목록이 모두 삭제됩니다.\n정말 초기화하시겠습니까?',
+    '초기화 진행', 'btn-red'
+  );
+  if (!ok1) return;
+  const ok2 = await confirmDlg.show(
+    '마지막 확인',
+    '한 번 더 확인합니다.\n초기화하면 되돌릴 수 없습니다.',
+    '네, 초기화합니다', 'btn-red'
+  );
+  if (!ok2) return;
   Object.values(autoTimers).forEach(t => clearTimeout(t));
   autoTimers = {}; records = []; counter = 0;
   db.ref('records').set(null);
