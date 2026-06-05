@@ -10,7 +10,11 @@ self.addEventListener('activate', event => {
   );
 });
 
-// 모든 요청을 항상 네트워크에서 받기 (캐시 사용 안 함)
+// 항상 네트워크에서 받기 (브라우저 캐시 무시)
 self.addEventListener('fetch', event => {
-  event.respondWith(fetch(event.request));
+  event.respondWith(
+    fetch(event.request, { cache: 'no-store' }).catch(() =>
+      caches.match(event.request)
+    )
+  );
 });
